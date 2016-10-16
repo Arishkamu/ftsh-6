@@ -1,0 +1,50 @@
+object Form1: TForm1
+  Left = 470
+  Height = 477
+  Top = 115
+  Width = 228
+  Caption = 'Form1'
+  ClientHeight = 477
+  ClientWidth = 228
+  Color = 16348727
+  LCLVersion = '1.6.0.4'
+  object Button1: TButton
+    Left = 40
+    Height = 41
+    Top = 32
+    Width = 155
+    Caption = 'Нажмите на меня'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Button2: TButton
+    Left = 40
+    Height = 144
+    Top = 88
+    Width = 155
+    Caption = 'кнопочка'
+    OnClick = Button2Click
+    TabOrder = 1
+  end
+  object Label1: TLabel
+    Left = 40
+    Height = 16
+    Top = 256
+    Width = 42
+    Caption = 'Label1'
+    Color = 11942399
+    ParentColor = False
+    Transparent = False
+    OnClick = Label1Click
+  end
+  object Edit1: TEdit
+    Left = 40
+    Height = 22
+    Top = 296
+    Width = 155
+    Color = clLime
+    OnChange = Edit1Change
+    TabOrder = 2
+    Text = '53556597и8'
+  end
+end
