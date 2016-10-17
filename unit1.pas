@@ -12,12 +12,12 @@ type
   { TForm1 }
 
   TForm1 = class(TForm)
-    Button1: TButton;
-    Button2: TButton;
+    add_button: TButton;
     Edit1: TEdit;
+    Edit2: TEdit;
     Label1: TLabel;
-    procedure Button1Click(Sender: TObject);
-    procedure Button2Click(Sender: TObject);
+    Label2: TLabel;
+    procedure add_buttonClick(Sender: TObject);
     procedure Edit1Change(Sender: TObject);
     procedure Label1Click(Sender: TObject);
   private
@@ -35,24 +35,19 @@ implementation
 
 { TForm1 }
 
-procedure TForm1.Button1Click(Sender: TObject);
+procedure TForm1.add_buttonClick(Sender: TObject);
 begin
-         Button1.Caption:='Спасибо!';
-end;
-
-procedure TForm1.Button2Click(Sender: TObject);
-begin
-     Button2.Height:=80;
+     label1.Caption := FloatToStr(StrToFloat(edit1.Text) + StrToFloat(edit2.Text));
 end;
 
 procedure TForm1.Edit1Change(Sender: TObject);
 begin
-         Label1.Caption:=Edit1.Text;
+
 end;
 
 procedure TForm1.Label1Click(Sender: TObject);
 begin
-         Label1.Caption:='привет, ЦОД!';
+
 end;
 
 end.
