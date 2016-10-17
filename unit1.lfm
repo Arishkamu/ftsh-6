@@ -45,5 +45,6 @@ object Form1: TForm1
     Color = clLime
     OnChange = Edit1Change
     TabOrder = 2
+    Text = 'Hello, my teacher!'
   end
 end
