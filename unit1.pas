@@ -37,22 +37,22 @@ implementation
 
 procedure TForm1.Button1Click(Sender: TObject);
 begin
-         Button1.Caption:='Спасибо!';
+        label1.Caption:=edit1.Text;
 end;
 
 procedure TForm1.Button2Click(Sender: TObject);
 begin
-     Button2.Height:=80;
+
 end;
 
 procedure TForm1.Edit1Change(Sender: TObject);
 begin
-         Label1.Caption:=Edit1.Text;
+
 end;
 
 procedure TForm1.Label1Click(Sender: TObject);
 begin
-         Label1.Caption:='привет, ЦОД!';
+
 end;
 
 end.
