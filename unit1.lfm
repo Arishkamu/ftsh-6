@@ -11,46 +11,44 @@ object Form1: TForm1
   object add_button: TButton
     Left = 120
     Height = 22
-    Top = 34
+    Top = 48
     Width = 32
     Caption = '+'
     OnClick = add_buttonClick
     TabOrder = 0
   end
   object Label1: TLabel
-    Left = 240
+    Left = 272
     Height = 16
-    Top = 40
+    Top = 70
     Width = 63
     Caption = 'результат'
-    Color = 11942399
+    Color = 13990911
     ParentColor = False
     Transparent = False
     OnClick = Label1Click
   end
   object Edit1: TEdit
-    Left = 16
+    Left = 40
     Height = 22
-    Top = 34
-    Width = 104
+    Top = 64
+    Width = 80
     Color = clLime
     OnChange = Edit1Change
     TabOrder = 1
-    Text = 'слаг.1'
   end
   object Edit2: TEdit
-    Left = 152
+    Left = 184
     Height = 22
-    Top = 34
+    Top = 64
     Width = 72
     Color = clLime
     TabOrder = 2
-    Text = 'слаг.2'
   end
   object Label2: TLabel
-    Left = 224
+    Left = 256
     Height = 16
-    Top = 40
+    Top = 70
     Width = 10
     Caption = '='
     Color = clForm
@@ -58,146 +56,42 @@ object Form1: TForm1
     Transparent = False
   end
   object sub_button: TButton
-    Left = 120
+    Left = 152
     Height = 22
-    Top = 104
+    Top = 48
     Width = 32
     Caption = '-'
     Color = clWhite
     OnClick = sub_buttonClick
     TabOrder = 3
   end
-  object Label3: TLabel
-    Left = 224
-    Height = 16
-    Top = 110
-    Width = 10
-    Caption = '='
-    Color = clForm
-    ParentColor = False
-    Transparent = False
-  end
-  object Label4: TLabel
-    Left = 240
-    Height = 16
-    Top = 110
-    Width = 63
-    Caption = 'результат'
-    Color = 10948859
-    ParentColor = False
-    Transparent = False
-  end
-  object Edit3: TEdit
-    Left = 16
-    Height = 22
-    Top = 104
-    Width = 104
-    Color = 5898083
-    TabOrder = 4
-    Text = 'умен.'
-  end
-  object Edit4: TEdit
-    Left = 152
-    Height = 22
-    Top = 104
-    Width = 72
-    Color = 5898083
-    TabOrder = 5
-    Text = 'вычит.'
-  end
-  object Edit5: TEdit
-    Left = 16
-    Height = 22
-    Top = 176
-    Width = 104
-    Color = 5898083
-    TabOrder = 6
-    Text = 'множ.1'
-  end
-  object Edit6: TEdit
-    Left = 152
-    Height = 22
-    Top = 176
-    Width = 72
-    Color = 5898083
-    TabOrder = 7
-    Text = 'множ.2'
-  end
-  object Label5: TLabel
-    Left = 224
-    Height = 16
-    Top = 182
-    Width = 10
-    Caption = '='
-    Color = clWhite
-    ParentColor = False
-    Transparent = False
-  end
-  object Label6: TLabel
-    Left = 240
-    Height = 16
-    Top = 182
-    Width = 63
-    Caption = 'результат'
-    Color = 9830646
-    ParentColor = False
-    Transparent = False
-  end
   object myl_button: TButton
-    Left = 120
+    Left = 152
     Height = 22
-    Top = 176
+    Top = 72
     Width = 32
     Caption = '*'
     Color = clWhite
     OnClick = myl_buttonClick
-    TabOrder = 8
+    TabOrder = 4
   end
   object div_button: TButton
     Left = 120
     Height = 22
-    Top = 240
+    Top = 72
     Width = 32
     Caption = '/'
     OnClick = div_buttonClick
-    TabOrder = 9
+    TabOrder = 5
   end
-  object Label7: TLabel
-    Left = 224
-    Height = 16
-    Top = 246
-    Width = 10
-    Caption = '='
+  object sqrt_button: TButton
+    Left = 40
+    Height = 25
+    Top = 88
+    Width = 80
+    Caption = ' корень'
     Color = clWhite
-    ParentColor = False
-    Transparent = False
-  end
-  object Label8: TLabel
-    Left = 240
-    Height = 16
-    Top = 246
-    Width = 63
-    Caption = 'результат'
-    Color = 8650993
-    ParentColor = False
-    Transparent = False
-  end
-  object Edit7: TEdit
-    Left = 16
-    Height = 22
-    Top = 240
-    Width = 104
-    Color = 5898083
-    TabOrder = 10
-    Text = 'делимое'
-  end
-  object Edit8: TEdit
-    Left = 152
-    Height = 22
-    Top = 240
-    Width = 72
-    Color = 5898083
-    TabOrder = 11
-    Text = 'делитель'
+    OnClick = sqrt_buttonClick
+    TabOrder = 6
   end
 end
