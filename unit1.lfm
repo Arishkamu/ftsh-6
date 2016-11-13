@@ -99,7 +99,7 @@ object Form1: TForm1
     Height = 25
     Top = 168
     Width = 72
-    Caption = 'Button1'
+    Caption = 'результат'
     OnClick = Button1Click
     TabOrder = 7
   end
@@ -108,7 +108,7 @@ object Form1: TForm1
     Height = 25
     Top = 168
     Width = 64
-    Caption = 'Button2'
+    Caption = '2 число'
     OnClick = Button2Click
     TabOrder = 8
   end
@@ -117,7 +117,7 @@ object Form1: TForm1
     Height = 25
     Top = 168
     Width = 80
-    Caption = 'Button3'
+    Caption = '1 число'
     OnClick = Button3Click
     TabOrder = 9
   end
@@ -131,30 +131,31 @@ object Form1: TForm1
     OnClick = Button4Click
     TabOrder = 10
   end
-  object Button5: TButton
+  object MPlus: TButton
     Left = 120
     Height = 25
     Top = 96
     Width = 64
     Caption = 'M+'
-    OnClick = Button5Click
+    OnClick = MPlusClick
     TabOrder = 11
   end
-  object Button6: TButton
+  object MMinus: TButton
     Left = 120
     Height = 25
     Top = 120
     Width = 64
     Caption = 'M-'
+    OnClick = MMinusClick
     TabOrder = 12
   end
-  object Button7: TButton
+  object MClear: TButton
     Left = 184
     Height = 25
     Top = 96
     Width = 72
     Caption = 'MC'
-    OnClick = Button7Click
+    OnClick = MClearClick
     TabOrder = 13
   end
 end

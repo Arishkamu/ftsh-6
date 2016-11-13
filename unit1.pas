@@ -17,9 +17,9 @@ type
     Button2: TButton;
     Button3: TButton;
     Button4: TButton;
-    Button5: TButton;
-    Button6: TButton;
-    Button7: TButton;
+    MPlus: TButton;
+    MMinus: TButton;
+    MClear: TButton;
     sqrt_button: TButton;
     div_button: TButton;
     myl_button: TButton;
@@ -33,8 +33,9 @@ type
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
     procedure Button4Click(Sender: TObject);
-    procedure Button5Click(Sender: TObject);
-    procedure Button7Click(Sender: TObject);
+    procedure MMinusClick(Sender: TObject);
+    procedure MPlusClick(Sender: TObject);
+    procedure MClearClick(Sender: TObject);
     procedure div_buttonClick(Sender: TObject);
     procedure myl_buttonClick(Sender: TObject);
     procedure sqrt_buttonClick(Sender: TObject);
@@ -81,14 +82,22 @@ begin
     label1.Caption := FloatToStr( 1/ (StrToFloat(edit1.Text)));
 end;
 
-procedure TForm1.Button5Click(Sender: TObject);
+procedure TForm1.MMinusClick(Sender: TObject);
 begin
-
+   a := a - StrToFloat(edit1.Text);
+   label1.Caption := FloatToStr(a);
 end;
 
-procedure TForm1.Button7Click(Sender: TObject);
+procedure TForm1.MPlusClick(Sender: TObject);
 begin
+  a := a + StrToFloat(edit1.Text);
+  label1.Caption := FloatToStr(a);
+end;
 
+procedure TForm1.MClearClick(Sender: TObject);
+begin
+   a := 0;
+   label1.Caption := FloatToStr(a);
 end;
 
 procedure TForm1.div_buttonClick(Sender: TObject);
@@ -103,7 +112,7 @@ end;
 
 procedure TForm1.sqrt_buttonClick(Sender: TObject);
 begin
-          label1.Caption := FloatToStr(sqrt(StrToFloat(edit1.Text)));
+   label1.Caption := FloatToStr(sqrt(StrToFloat(edit1.Text)));
 end;
 
 procedure TForm1.sub_buttonClick(Sender: TObject);
