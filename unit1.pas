@@ -17,6 +17,8 @@ type
     Button2: TButton;
     Button3: TButton;
     Button4: TButton;
+    Button5: TButton;
+    Button6: TButton;
     MPlus: TButton;
     MMinus: TButton;
     MClear: TButton;
@@ -33,6 +35,9 @@ type
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
     procedure Button4Click(Sender: TObject);
+    procedure Button5Click(Sender: TObject);
+    procedure Button6Click(Sender: TObject);
+    procedure Button7Click(Sender: TObject);
     procedure MMinusClick(Sender: TObject);
     procedure MPlusClick(Sender: TObject);
     procedure MClearClick(Sender: TObject);
@@ -50,7 +55,8 @@ type
 
 var
   Form1: TForm1;
-  a:Real;
+  a: Real;
+  d, b, c: integer;
 implementation
 
 {$R *.lfm}
@@ -80,6 +86,40 @@ end;
 procedure TForm1.Button4Click(Sender: TObject);
 begin
     label1.Caption := FloatToStr( 1/ (StrToFloat(edit1.Text)));
+end;
+
+procedure TForm1.Button5Click(Sender: TObject);
+var
+  factorial, i, n: integer;
+begin
+  factorial := 1;
+  n := StrToInt(edit1.Text);
+  for i := 1 to n do
+  begin
+    factorial := factorial * i;
+  end;
+  Label1.Caption:= IntToStr(factorial);
+end;
+
+procedure TForm1.Button6Click(Sender: TObject);
+begin
+  label1.Caption:=IntToStr(c);
+  d:= StrToInt(edit1.Text);
+  b:= StrToInt(edit2.Text);
+  c:= d div b;
+  c:= d mod b;
+  if c = 0 then
+begin
+  label1.Caption:= 'Да' ;
+end else
+begin
+  label1.Caption:= 'Нет' ;
+end;
+end;
+
+procedure TForm1.Button7Click(Sender: TObject);
+begin
+
 end;
 
 procedure TForm1.MMinusClick(Sender: TObject);
