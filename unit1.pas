@@ -19,6 +19,7 @@ type
     Button4: TButton;
     Button5: TButton;
     Button6: TButton;
+    Button7: TButton;
     MPlus: TButton;
     MMinus: TButton;
     MClear: TButton;
@@ -57,6 +58,7 @@ var
   Form1: TForm1;
   a: Real;
   d, b, c: integer;
+  i, n, r: integer;
 implementation
 
 {$R *.lfm}
@@ -70,7 +72,7 @@ end;
 
 procedure TForm1.Button1Click(Sender: TObject);
 begin
-    a:= StrToFloat(label1.Caption);
+    a := StrToFloat(label1.Caption);
 end;
 
 procedure TForm1.Button2Click(Sender: TObject);
@@ -119,7 +121,18 @@ end;
 
 procedure TForm1.Button7Click(Sender: TObject);
 begin
-
+   Label1.Caption:= '1' ;
+   n:= StrToInt(edit1.Text);
+   For i := 2 to n do
+begin
+   r:= n mod i;
+begin
+   if r = 0 then
+begin
+   label1.Caption := label1.Caption + ', ' + IntToStr(i);
+end;
+end;
+end;
 end;
 
 procedure TForm1.MMinusClick(Sender: TObject);
