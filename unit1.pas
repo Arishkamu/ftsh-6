@@ -5,7 +5,8 @@ unit Unit1;
 interface
 
 uses
-  Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls, Math;
+  Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls,
+  ExtCtrls, Math;
 
 type
 
@@ -20,6 +21,8 @@ type
     Button5: TButton;
     Button6: TButton;
     Button7: TButton;
+    Button8: TButton;
+    Image1: TImage;
     MPlus: TButton;
     MMinus: TButton;
     MClear: TButton;
@@ -39,6 +42,12 @@ type
     procedure Button5Click(Sender: TObject);
     procedure Button6Click(Sender: TObject);
     procedure Button7Click(Sender: TObject);
+    procedure Button8Click(Sender: TObject);
+    procedure Image1Click(Sender: TObject);
+    procedure Image1MouseDown(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Integer);
+    procedure Image1MouseUp(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Integer);
     procedure MMinusClick(Sender: TObject);
     procedure MPlusClick(Sender: TObject);
     procedure MClearClick(Sender: TObject);
@@ -59,6 +68,7 @@ var
   a: Real;
   d, b, c: integer;
   i, n, r: integer;
+  flag,j,m: integer;
 implementation
 
 {$R *.lfm}
@@ -133,6 +143,53 @@ begin
 end;
 end;
 end;
+end;
+
+procedure TForm1.Button8Click(Sender: TObject);
+begin
+   Label1.Caption:= '1' ;
+   flag:= 0 ;
+   n:= StrToInt(edit1.Text);
+   For i := 2 to n do
+begin
+   r:= n mod i;
+begin
+   if r = 0 then
+begin
+   for j := 2 to j-1 do
+begin
+   m:= i mod j;
+   if m = 0 then
+begin
+   flag:= 1;
+begin
+   if flag = 0 then
+begin
+   label1.Caption :=IntToStr();
+end;
+end;
+end;
+end;
+end;
+end;
+end;
+end;
+
+procedure TForm1.Image1Click(Sender: TObject);
+begin
+
+end;
+
+procedure TForm1.Image1MouseDown(Sender: TObject; Button: TMouseButton;
+  Shift: TShiftState; X, Y: Integer);
+begin
+
+end;
+
+procedure TForm1.Image1MouseUp(Sender: TObject; Button: TMouseButton;
+  Shift: TShiftState; X, Y: Integer);
+begin
+
 end;
 
 procedure TForm1.MMinusClick(Sender: TObject);
